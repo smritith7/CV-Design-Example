@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Design Example</title>
+
+    <!-- Load FontAwesome properly -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main table for the CV layout */
+        table.cv-table {
+            width: 700px;
+            height: auto;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-spacing: 0;
+            overflow: hidden;
+        }
+
+        /* Left Column (Sidebar) */
+        td.left-column {
+            background-color: #3b3b3b;
+            color: white;
+            width: 36%;
+            padding: 30px;
+            vertical-align: top;
+        }
+
+        td.left-column img {
+            border-radius: 50%;
+            width: 130px; 
+            height: 130px;
+            display: block;
+            margin: 7px auto 38px;
+        }
+
+        td.left-column h3 {
+            font-size: 18px;
+            border-bottom: 2px solid #6a6a6a;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        /* Remove bullets from contact list */
+        td.left-column .contact-list {
+            list-style-type: none; 
+            padding-left: 0; 
+            padding: 0 0 0 0;
+        }
+
+        td.left-column .contact-list li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            display: flex; 
+            align-items: center; 
+        }
+
+        td.left-column .contact-list li i {
+            margin-right: 10px; 
+            color: lightgrey; 
+        }
+
+        /* Styles for Skills and Languages */
+        td.left-column ul {
+            list-style-type: disc; 
+            padding: 0 0 0 13px; 
+            margin: 0; 
+        }
+
+        td.left-column ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        td.left-column p {
+            font-size: 14px;
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        /* Right Column (Main Content) */
+        td.right-column {
+            width: 65%;
+            padding: 30px;
+            vertical-align: top;
+        }
+
+        td.right-column h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        td.right-column .position {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        td.right-column h3 {
+            font-size: 20px;
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Experience and Education tables */
+        table.experience,
+        table.education {
+            width: 100%;
+            border-spacing: 0;
+            margin-bottom: 30px; 
+        }
+
+        table.experience tr,
+        table.education tr {
+            margin-bottom: 20px;
+        }
+
+        table.experience td,
+        table.education td {
+            padding: 10px 0;
+        }
+
+        table.experience td:first-child,
+        table.education td:first-child {
+            width: 33%;
+            font-size: 14px;
+            color: #666;
+        }
+
+        table.experience td:last-child,
+        table.education td:last-child {
+            width: 75%;
+            font-size: 16px;
+            line-height: 1.5; 
+        }
+
+        table.experience td:last-child {
+            padding-top: 20px; 
+            padding-bottom: 20px; 
+        }
+
+        .experience ul {
+            list-style-type: disc; 
+            padding-left: 20px; 
+            margin: 0; 
+        }
+
+        .experience ul li {
+            margin-bottom: 5px; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="cv-table">
+        <tr>
+            <!-- Left Column (Sidebar) -->
+            <td class="left-column">
+                <img src="image/profile.jpg" alt="Profile Picture">
+
+                <!-- About Me Section -->
+                <h3>About Me</h3>
+                <p>A creative Graphic Designer with 5+ years of experience in delivering engaging designs for diverse clients. Proficient in design tools and dedicated to creating visually compelling graphics.</p>
+                <h3>Contact</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-phone"></i> +123-456-7890</li>
+                    <li><i class="fas fa-envelope"></i> hello@reallygreatsite.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Anywhere Street,<br>Any City</li>
+                </ul>
+
+                <h3>Skills</h3>
+                <ul>
+                    <li>Web Design</li>
+                    <li>Branding</li>
+                    <li>Graphic Design</li>
+                    <li>SEO</li>
+                    <li>Marketing</li>
+                </ul>
+
+                <h3>Languages</h3>
+                <ul>
+                    <li>English</li>
+                    <li>French</li>
+                </ul>
+            </td>
+
+            <!-- Right Column (Main Content) -->
+            <td class="right-column">
+                <h1>Isabel Schumacher</h1>
+                <span class="position">Graphics Designer</span>
+
+                <!-- Education Section -->
+                <h3>Education</h3>
+                <table class="education">
+                    <tr>
+                        <td>2011 - 2015</td>
+                        <td>
+                            <strong>Wardiere University</strong><br>
+                            Bachelor of Design<br>
+                            GPA: 3.65
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2014 - 2019</td>
+                        <td>
+                            <strong>Wardiere University</strong><br>
+                            Bachelor of Design<br>
+                            GPA: 3.74
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Experience Section -->
+                <h3>Experience</h3>
+                <table class="experience">
+                    <tr>
+                        <td>2020 - 2023</td>
+                        <td>
+                            <strong>Senior Graphic Designer</strong><br>
+                            Fauget Studio<br>
+                            <ul>
+                                <li>Created over 100 graphic designs for large companies</li>
+                                <li>Delivered multiple high-complexity projects</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2017 - 2019</td>
+                        <td>
+                            <strong>Senior Graphic Designer</strong><br>
+                            Iarana, Inc.<br>
+                            <ul>
+                                <li>Developed creative solutions for clients</li>
+                                <li>Managed design projects from concept to completion</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
